@@ -5,9 +5,6 @@ import Sreemongol from '../../Image/Sreemongol.png';
 import { Button, Card, CardDeck} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-
-
-
 const Home = () => {
     return (
     

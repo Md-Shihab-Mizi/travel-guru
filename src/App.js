@@ -32,10 +32,10 @@ export const UserContext = createContext();
 
 
 function App() {
-  
-  
-  const [newUser,setNewUser] = useState(false);
-  const [user,setUser] = useState({
+
+
+  const [newUser, setNewUser] = useState(false);
+  const [user, setUser] = useState({
     isSignedIn: false,
     name: '',
     email: '',
@@ -47,7 +47,7 @@ function App() {
 
   return (
 
-    <UserContext.Provider value={[newUser,setNewUser, user ,setUser]}>
+    <UserContext.Provider value={[newUser, setNewUser, user, setUser]}>
       <Router>
         <Header></Header>
         <Switch>
@@ -58,7 +58,7 @@ function App() {
             <Home />
           </Route>
           <Route path="/blog">
-            <Blog/>
+            <Blog />
           </Route>
           <Route path="/sundorban">
             <Sundorban />
